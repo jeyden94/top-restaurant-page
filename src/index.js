@@ -1,3 +1,3 @@
-const greeting = "byeeeee"
+const greeting = "byeeeeee"
 
 console.log(greeting)
