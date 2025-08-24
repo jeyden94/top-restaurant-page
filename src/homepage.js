@@ -1,5 +1,5 @@
 export function homeScreenController() {
-    const contentDiv = document.querySelector("#content");
+    const homeContentDiv = document.querySelector("#content");
     
     // contentDiv.textContent = "Hello world"
 
@@ -49,7 +49,7 @@ export function homeScreenController() {
 
     // Append homepage HTML content elements to the content div
 
-    contentDiv.append(restaurantName, aboutDiv, hoursDiv, locationDiv);
+    homeContentDiv.append(restaurantName, aboutDiv, hoursDiv, locationDiv);
 
     console.log("heeei")
 }
