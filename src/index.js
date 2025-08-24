@@ -1,3 +1,3 @@
-const greeting = "byeeeeee"
+import { homeScreenController } from "./homepage.js"
 
-console.log(greeting)
+homeScreenController()
