@@ -1,6 +1,7 @@
 import "./styles.css";
 import { homeScreenController } from "./homepage.js"
 import { menuScreenController } from "./menu.js"
+import { contactScreenController } from "./contact.js"
 
 function navController() {
     
@@ -16,14 +17,25 @@ function navController() {
     const menuButton = document.querySelector(".menu-btn");
     const contactButton = document.querySelector(".contact-btn");
 
+    homeButton.addEventListener("click", homeClickHandler)
     menuButton.addEventListener("click", menuClickHandler)
+    contactButton.addEventListener("click", contactClickHandler)
+
 
     function menuClickHandler() {
         contentDiv.innerHTML = "";
         menuScreenController();
     }
 
+    function homeClickHandler() {
+        contentDiv.innerHTML = "";
+        homeScreenController();
+    }
 
+    function contactClickHandler() {
+        contentDiv.innerHTML = "";
+        contactScreenController();
+    }
 
 }
 
