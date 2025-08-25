@@ -1,8 +1,6 @@
 export function homeScreenController() {
     const homeContentDiv = document.querySelector("#content");
     
-    // contentDiv.textContent = "Hello world"
-
     // Create homepage HTML content elements
  
     const restaurantName = document.createElement("h1");
@@ -51,5 +49,5 @@ export function homeScreenController() {
 
     homeContentDiv.append(restaurantName, aboutDiv, hoursDiv, locationDiv);
 
-    console.log("heeei")
+    console.log("hi")
 }
